@@ -42,6 +42,9 @@ inputs:
   prebuild_script:
     description: Relative path from top-level to script to run before Docker build
     required: false
+  use_buildx:
+    description: Use experimental docker buildx cli plugin
+    default: false
 outputs:
   image:
     description: 'The created image name'
